@@ -1,0 +1,17 @@
+{
+  "name": "maratonadev",
+  "version": "1.0.0",
+  "main": "C:/Code/RocketSeat/MaratonaDev/Server/index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.2",
+    "pg": "^8.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
