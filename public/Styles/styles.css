@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  background-color: #f5f3f4;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+header h1 {
+  margin-bottom: 70px;
+}
+
+header,
+main,
+footer {
+  text-align: center;
+}
+
+header,/*Bottom spacement*/
+.form, 
+main {
+  margin: 0 auto 70px;
+  width: 90%;
+  max-width: 500px;
+}
+
+header button {
+  margin-top: 16px;
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: 1px #8d0c0e solid;
+  background-color: #ef233c;
+  color: #f5f3f4;
+  font-weight: bold;
+}
+
+.logo {
+  width: 200px;
+  margin: 50px;
+}
+
+.form h2 {
+  text-align: center;
+  margin-right: 30px;
+  color: #f5f3f4;
+  font-size: 20px;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ef233c;
+  padding: 16px 30px;
+  align-items: center;
+  border-radius: 6px;
+}
+
+form input {
+  width: 100%;
+  margin-bottom: 4px;
+  padding: 8px 16px;
+  background-color: transparent;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border: 1px solid #f5f3f4;
+}
+
+form input::placeholder {
+  color: #b1a7a6;
+}
+
+form button {
+  width: 100%;
+  margin-bottom: 4px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border: 1px #f5f3f4 solid;
+}
+
+main h2 {
+  margin-bottom: 70px;
+}
+
+main h2 span {
+  color: #ef233c;
+}
+
+.donors {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.blood {
+  color: #bd2133;
+  font-weight: bold;
+  font-size: large;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blood::before {
+  content: "";
+  background-color: #ef233b44;
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+
+  border-radius: 50%;
+  border-top-right-radius: 0;
+
+  transform: rotate(-45deg);
+}
+
+.donor p {
+  margin-top: 15px;
+  margin-bottom: 64px;
+  font-size: 15px;
+}
+
+footer {
+  margin-top: auto;
+  padding-bottom: 16px;
+  border: 1px solid #796465;
+}
+
+/*JAVASCRIPT*/
+
+section.form {
+  transition: all 300ms;
+}
+
+section.form.hide {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  margin-top: -80px;
+}
